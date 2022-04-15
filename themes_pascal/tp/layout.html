@@ -1,0 +1,29 @@
+{% extends "pascal/layout.html" %}
+{% set script_files = script_files +
+['_static/show_hide.js','_static/solution.js' ] %}
+{% set css_files = css_files + ['_static/solution.css', '_static/tp.css'] %}
+{% if false %}
+{% block extrahead %}
+    {% include "mathjax.html" %}
+{% endblock %}
+{% endif %}
+
+{% block document %}
+<div class="documentwrapper">
+  {%- if render_sidebar %}
+  <div class="bodywrapper">
+    {%- endif %}
+    <div class="body">
+      {% if tp_solutions_languages %}
+      <div id="removelanguage" class='{{ tp_solutions_languages.show[1:]|join(" ") }}'>
+      {% endif %}
+        {% block body %} {% endblock %}
+      {% if tp_solutions_languages %}
+      </div>
+      {% endif %}
+    </div>
+    {%- if render_sidebar %}
+  </div>
+  {%- endif %}
+</div>
+{% endblock %}

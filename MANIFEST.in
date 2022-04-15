@@ -1,0 +1,3 @@
+include LICENSE
+graft themes_pascal/pascal
+graft themes_pascal/tp

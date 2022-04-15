@@ -1,0 +1,5 @@
+div.important, div.note {
+    font-size: 90%;
+    background-color: #eaeaea;
+    border: 1px solid #ccc;
+}

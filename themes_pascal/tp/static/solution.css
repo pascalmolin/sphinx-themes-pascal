@@ -1,0 +1,91 @@
+
+
+h2 {
+  color: #19315e;
+}
+
+/* css for show-hide solutions */
+
+div.folded span.toggle-show {
+  font-size: small;
+  font-weight:bold;
+  cursor: pointer;
+  /*color: #d4debf;*/
+  color: #5c7a99;
+  /*display: block;*/
+} 
+div.folded span.toggle-hide {
+  display: none;
+} 
+div.unfolded span.toggle-show {
+  display: none;
+} 
+div.unfolded span.toggle-hide {
+  font-size: small;
+  font-weight:bold;
+  cursor: pointer;
+  color: #5c7a99;
+  /*display: block;*/
+} 
+div.folded div.solution {
+  display: none;
+}
+div.unfolded div.solution {
+  display: block;
+  /*float: left;*/
+  padding: 4px;
+  background-color: #cfd8e0;
+  background-color: #f4f4ff;
+}
+div.solution pre {
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: #f0f0f0;
+}
+/* hide some languages */
+#removelanguage.sage div.sage {
+  display:none;
+}
+#removelanguage.xcas div.xcas {
+  display:none;
+}
+#removelanguage.gp div.gp {
+  display:none;
+}
+
+.sage.sidebar, .sage.topic {
+  background-color: #f4f4ff;
+}
+
+.gp.topic {
+  background-color: #fdfde0;
+}
+
+/* yellow colors for xcas */
+div.xcas div.solution {
+  background-color: #fdfde0;
+}
+div.xcas div.solution pre {
+  background-color: #fdfdf0;
+}
+div.xcas span.toggle-show {
+  color: #e68a00;
+}
+div.xcas span.toggle-hide {
+  color: #e68a00;
+}
+/* same for gp */
+div.gp div.solution {
+  background-color: #fdfde0;
+}
+div.gp div.solution pre {
+  background-color: #fdfdf0;
+}
+div.gp span.toggle-show {
+  color: #e68a00;
+}
+div.gp span.toggle-hide {
+  color: #e68a00;
+}

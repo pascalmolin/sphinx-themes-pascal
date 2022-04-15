@@ -1,0 +1,12 @@
+{% if tp_solutions_languages %}
+<div id="selector">
+  <h3>Langage</h3>
+  <form name="solution-form">
+    {%- for lang in tp_solutions_languages.show %}
+    <input type='checkbox' name='langage' value='{{lang}}' 
+    {%- if loop.first %} checked {%- endif %}
+    onchange='javascript:selectsols(this)' /> {{lang}}
+    {%- endfor %}
+  </form>
+</div>
+{% endif %}
